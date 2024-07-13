@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 const Login = () => {
     const navigate = useNavigate()
     
@@ -69,7 +70,18 @@ const Login = () => {
         }
     }
 //handle submit till here......................................
-
+    useEffect(()=>{
+        (async()=>{
+             try {
+               const res = await axios.get(`/api/v1/users/home`);
+                if(res.data.status === 202)
+                    navigate('/')
+               }
+              catch (error) {
+               console.error("login time error", error);
+             }
+        })()
+    },[])
 
 
   return (

@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import './Contacts.css'
 import axios from 'axios';
-import {  useNavigate } from 'react-router-dom';
+import {  useLocation, useNavigate } from 'react-router-dom';
 import Foote from '../components/Foote.jsx'
 
 const Contacts = () => {
+  const location = useLocation();
+  const serviceData = location.state || ""
+  console.log("service-data",serviceData);
   const navugate = useNavigate()
   const [sertype,setSerType] = useState({
     catagory:"",
@@ -39,7 +42,7 @@ const {catagory,message} = sertype
         <h3></h3>
         <div className="innercontsiner">
           <form  className="contactform" onSubmit={handleSubmit}>
-            <input placeholder='catagoy' type="text" className="contacttype" name='catagory' onChange={handlechange} value={sertype.catagory}/>
+            <input placeholder='catagoy' type="text" className="contacttype" name='catagory' onChange={handlechange} value={serviceData.data||sertype.catagory}/>
             <textarea placeholder='Description' name="message" type='text' id="" cols="30" rows="10" className='contactDesc' onChange={handlechange} value={sertype.message} ></textarea>
             <button type='submit'>Submit</button>
           </form>

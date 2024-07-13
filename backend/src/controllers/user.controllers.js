@@ -101,14 +101,14 @@ const writeReview = asyncHandler( async (req,res)=>{
     const getreview = await Review.find({}).populate('userdetails')
     if(!getreview)throw new apiError(401,"not getting review from db")
 
-    return res.status(202).json(getreview)
+    return res.status(202).json(getreview, req.user);
 })
 
 const readReview = asyncHandler(async(req,res)=>{
     const getreview = await Review.find({}).populate('userdetails')
     if(!getreview)throw new apiError(401,"not getting review from db")
     // console.log();
-    return res.status(202).json(getreview)
+    return res.status(202).json(getreview, req.user);
 })
 
 const contactPage =asyncHandler( async(req,res)=>{
@@ -129,7 +129,9 @@ const contactPage =asyncHandler( async(req,res)=>{
 
     if(!response) throw new apiError(402,"Response not generated in review write")
 
-    return res.status(202).json("successfully submitted ! U r contacted by  team member")
+    return res
+      .status(202)
+      .json("successfully submitted ! U r contacted by  team member", req.user);
 })
 
 const adminLogin = asyncHandler(async(req,res)=>{

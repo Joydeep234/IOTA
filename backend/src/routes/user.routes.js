@@ -22,9 +22,9 @@ router.route('/home').get(usercookieVerification,dashboard)
 router.route('/register').post(registeruser)
 router.route('/login').post(loginUser)
 router.route('/logout').get(logoutuser)
-router.route('/writereview').post(writeReview)
-router.route('/readReview').get(readReview)
-router.route('/contact').post(contactPage)
+router.route("/writereview").post(usercookieVerification, writeReview);
+router.route("/readReview").get(usercookieVerification, readReview);
+router.route("/contact").post(usercookieVerification, contactPage);
 
 router.route('/admin/register').post(adminregister)
 router.route('/admin/login').post(adminLogin)

@@ -1,6 +1,6 @@
 import "./Register.css"
 import axios from 'axios'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 // import PersonIcon from '@mui/icons-material/Person';
 // import EmailIcon from '@mui/icons-material/Email';
 // import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -12,6 +12,18 @@ import LoginSignup from "../components/LoginSignup";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+
+    useEffect(() => {
+      (async () => {
+        try {
+          const res = await axios.get(`/api/v1/users/home`);
+          if (res.data.status === 202) navigate("/");
+        } catch (error) {
+          console.error("login time error", error);
+        }
+      })();
+    }, []);
+
     const navigate = useNavigate()
     const [user, setuser] = useState({
         username:"",
