@@ -1,0 +1,42 @@
+.LoginSignupMain{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 0px;
+}
+.logSinImg{
+    padding: 5px 0 0 10px;
+    margin-left: 2rem;
+    margin-top: 2px;
+}
+.iotaImg{
+    width: 5rem;
+}
+.logsinbtn{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    justify-content: space-around;
+}
+.logsinlink{
+    margin-right:2rem ;
+    padding: 5px; 
+    border-radius: 5rem;
+}
+.logsinlink{
+    padding: 2px 3px;
+
+}
+.logsinlink:hover{
+    transition: 5ms ease-in-out;
+    transform: scale3d(1.1,1.1,1.1);
+    text-decoration: solid rgb(19, 19, 18);
+}
+.link{
+    text-decoration: none;
+    color: rgba(172, 34, 190, 0.849);
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.link:hover{
+    color: rgb(99, 14, 236);
+}

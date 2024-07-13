@@ -1,0 +1,119 @@
+.NavbarMianContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding: 5px;
+    background-color: #f3f3f3;
+    /* box-shadow: 0px 9px 12px 28px rgba(0,0,0,0.67);
+-webkit-box-shadow: 0px 9px 12px 28px rgba(0,0,0,0.67);
+-moz-box-shadow: 0px 9px 12px 28px rgba(0,0,0,0.67); */
+}
+.linktoanotherpage{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(66, 70, 73);
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.linktoanotherpage:hover{
+    color: #3975b9;
+    text-decoration: underline rgba(20, 26, 48, 0.753) 3px ;
+
+}
+.linktoanotherpage:active{
+    text-decoration: underline rgba(67, 96, 192, 0.753) 3px ;
+}
+.navbarinconatiner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.navbarImg{
+    margin: 5px;
+}
+.navbarLinkContainer{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.navbarLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 4rem;
+    /* border: 1px solid red; */
+    width: 33%;
+}
+.navbarLinks Links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbarLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbarLogin h1{
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: #9bd4ecab;
+    color: rgb(196, 62, 214);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.navbarinout{
+    margin:0px 3rem;
+    cursor: pointer;
+}
+.navbarLoginButton{
+    font-weight:bolder;
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: none;
+    padding: 8px 10px ;
+    background-color: transparent;
+    color: rgb(147, 67, 201);
+}
+.navbarloginlink{
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: none;
+    padding: 8px 10px ;
+    background-color: transparent;
+    color: rgb(147, 67, 201);
+}
+.navbarLogout p{  
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size:1.5rem;
+}
+/* .navbarlogininfocontainer{
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 20%;
+    margin-right: 2rem;
+    margin-top: 3.4rem;
+    z-index: -1;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight:700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 1px 2px 16px 3px rgba(0,0,0,0.83);
+-webkit-box-shadow: 1px 2px 16px 3px rgba(0,0,0,0.83);
+-moz-box-shadow: 1px 2px 16px 3px rgba(0,0,0,0.83);
+}
+.navbarLogin:hover+.navbarlogininfocontainer{
+    z-index: 5 !important;
+} */

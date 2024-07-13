@@ -1,0 +1,42 @@
+.servicemaincontainer{
+    background-color: rgb(255, 248, 180);
+}
+.serviceimages{
+    width: 120vh;
+    height: 70vh;
+    box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.7);
+-webkit-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.7);
+}
+.servicemaincontainer h1{
+    color: rgb(132, 69, 204);
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+}
+.webdev,.graphics,.mobile,.photo{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.webdev h3,.graphics h3,.mobile h3,.photo h3{
+    margin-left: 0px;
+    font-size: 2rem;
+    color: rgb(132, 69, 204);
+}
+.descandimg{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicetitle{
+    padding: 3rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+.dervicedesc{
+    padding: 3rem 15rem;
+    text-align: justify;
+}

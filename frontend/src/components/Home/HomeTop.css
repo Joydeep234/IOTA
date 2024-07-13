@@ -1,0 +1,64 @@
+.Hometopmaincontainer{
+    height: 70vh;
+    background-color: rgb(211, 231, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hometopcontainerfirst{
+    text-align: center;
+}
+.hometopcontainerfirst h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    color: rgb(102, 132, 145);
+}
+
+.hometopcontainersecond{
+    margin: 0px 4rem;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.hometopcontainersecond p{
+    border-right:3px solid ;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:rgb(70, 76, 95);
+    margin-bottom: 2rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s,
+                cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width:0 }
+}
+.hometopcontainersecond h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(102, 132, 145);
+}
+.hometopcontainerthird{
+    background-color: rgb(51, 102, 197);
+    padding: 0.8rem 7rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.hometopcontainerthirdLink{
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: white;
+}
+.hometopcontainerthird:hover{
+    background-color: rgb(23, 70, 224);
+    box-shadow: 0px -1px 14px 7px rgba(0,0,0,0.71);
+-webkit-box-shadow: 0px -1px 14px 7px rgba(0,0,0,0.71);
+-moz-box-shadow: 0px -1px 14px 7px rgba(0,0,0,0.71);
+}

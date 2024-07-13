@@ -1,0 +1,61 @@
+.homeservicemainfinalframe{
+    background-color: rgb(197, 214, 213);
+}
+.homeserviceh3{
+    color: rgb(80, 92, 97);
+    padding: 2rem;
+    margin:2rem ;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2.7rem;
+}
+.Homeservicemaincoontainer{
+    width: 100%;
+    min-height: fit-content;
+}
+.homeserviceframes{
+    margin: 1.5rem;
+    padding-bottom: 1rem;
+}
+.homeservice{
+    width: 70%;    
+}
+
+.homeservicetitleend{
+    display: flex;
+    justify-content:end;
+    padding: 1.5rem;
+}
+.homeservicetitleend,.homeservicetitle{
+    margin: 1rem;
+}
+.homeservicedetailcontainer{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.homeservip{
+    margin: 1rem;
+    text-align: justify;
+    font-size: 1.18rem;
+    font-weight: 500;
+    color: rgb(42, 43, 44);
+}
+.hs1{
+    position: relative;
+    left:30%;
+}
+.homeservicetitle{
+    /* padding: 1rem 0rem; */
+    /* display: flex;
+    justify-content: center; */
+}
+.homeservicetitleendLink{
+    color: rgb(106, 121, 118);
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+.homeserviceimg{
+    width: 50%;
+    height: 28vh;
+}

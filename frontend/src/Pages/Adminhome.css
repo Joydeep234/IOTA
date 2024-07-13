@@ -1,0 +1,69 @@
+.adminhomemaincontainer{
+    background-color: rgb(247, 245, 243);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.logoutadmin{
+    display: flex;
+    justify-content: end;
+}
+.logoutbuttonadmin{
+    border-style: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 0.8rem;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(99, 99, 185);
+    color: rgb(231, 242, 253);
+    transition: ease-in;
+}
+.logoutbuttonadmin:hover{
+    background-color: rgb(42, 42, 207);
+    color: rgb(48, 59, 70);
+}
+.admininnermaincontainer{
+    display: flex;
+    justify-content: center;
+}
+.admininnermaincontainerh3{
+ text-align: center;
+ font-size: 2rem;
+ font-weight: bolder;
+ color: rgb(107, 103, 103); 
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+.displaycontacts{
+    margin-top:2rem ;
+    /* background-color: rgb(255, 255, 255); */
+    border: 1px solid rgb(105, 104, 104);
+    width: 70%;
+    min-height: 50vh;
+}
+.contactsreadreviewinnercontainer{
+    width: 93%;
+    margin: 2rem;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.contactsreadinnercontainertop{
+    width: 75%;
+    display: flex;
+}
+.common{
+    margin: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    color: rgb(117, 117, 117);
+}
+.readrevirecontent{
+    width: 80%;
+    height: fit-content;
+}

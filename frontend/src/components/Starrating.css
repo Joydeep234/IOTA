@@ -1,0 +1,15 @@
+.statrmaincontainer{
+    display: flex;
+    color: rgb(224, 154, 25);
+}
+
+.fullstar{
+    /* border: 1px solid black; */
+}
+.halfstar{
+    /* border: 1px solid green; */
+    width: 8px;
+    overflow: hidden;
+}
+
+

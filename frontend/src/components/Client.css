@@ -1,0 +1,33 @@
+.clientmaindivcontainer{
+    margin-top: -1.5rem;
+    background-color: rgb(193, 223, 220);
+    height: 70vh;
+}
+.clientmaindivcontainer h3{
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: bolder;
+    color: rgb(96, 121, 121);
+    padding-top: 2rem;
+}
+.clientinnerdiv{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly; 
+}
+.clientstore{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.clientimg{
+    background-color: white;
+    width: 15rem;
+    height: 7rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px -1px 11px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px -1px 11px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px -1px 11px 1px rgba(0,0,0,0.5);
+}
